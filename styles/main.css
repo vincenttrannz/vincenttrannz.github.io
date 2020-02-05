@@ -15,6 +15,17 @@ ul li{
     text-align-last: left;
     line-height: 150%;
 }
+.button{
+    letter-spacing: 20px;
+}
+button{
+    border-radius: 20px;
+    box-shadow: 1px 1px gray;
+}
+button a{
+    text-decoration: none;
+    font-size: 16px;
+}
 .title{
     text-align: center;
     font-size: larger;
