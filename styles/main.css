@@ -1,0 +1,21 @@
+html{
+    background-color: rgb(150, 211, 189);
+    padding: 50px 150px 150px 150px;
+}
+body{
+    padding: 20px 60px 20px 60px;
+    box-shadow: 3px 3px gray;
+    border: outset;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    font-size: 20px;
+}
+ul li{
+    text-align: justify;
+    text-align-last: left;
+    line-height: 150%;
+}
+.title{
+    text-align: center;
+    font-size: larger;
+}
