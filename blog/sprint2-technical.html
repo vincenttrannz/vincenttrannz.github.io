@@ -10,8 +10,8 @@
 <body>
     <div class="blankspace"></div>
     <div class="navi">
-        <a href="../index.html"><strong>Home</strong></a>
-        <a href=".html"><strong>Contact</strong></a>
+        <a href="../index.html">Home</a>
+        <a href=".html">Contact</a>
     </div>
     <hr>
     <div class="title">
@@ -54,36 +54,35 @@
         <p>Keeping CSS code in a separate file is best practice. In real programming world, we need to keep HTML, CSS and JavaScript code in separate files and later import them where necessary.</p>
         <p>We can create a separate CSS file with an extension of .css and include it to HTML. For example, we can create a CSS file like this one: index.css</p>
         Inside <xmp> index.css</xmp>, we can write our CSS code:
-        <xmp>           p{
-            color: red;
-            }
-        </xmp>
+<xmp>   p{
+    color: red;
+    }
+</xmp>
         <p>Then we can import index.css to HTML with a link tag like below:</p>
-        <xmp>
-            <head>
-                <link rel="stylesheet" href="index.css">
-            </head>
-            <body>
-                <p>Hello World</p>
-            </body>
-        </xmp>
+<xmp>
+ <head>
+    <link rel="stylesheet" href="index.css">
+ </head>
+     <body>
+         <p>Hello World</p>
+     </body>
+</xmp>
         <p>So now the HTML file has the CSS code and the changes will apply to the elements.</p>
         <h3>2. Internal CSS with style tag:</h3>
         <p>Another way where you can write CSS code is inside a style tag in HTML. 
         This will keep the CSS code directly inside the HTML file, rather than in a separate file.</p>
-        <xmp>
-            <style>
-                p{
-                    color: red;
-                };
-            </style>
-            <body>
-                <p>Hello World</p>
-            </body>
-        </xmp>
+<xmp>
+ <style>
+     p{
+     color: red;
+     };
+ </style>
+ <body>
+     <p>Hello World</p>
+ </body>
+</xmp>
         <h3>3. Inline style:</h3>
         <p>The third way is to write CSS rules directly inside an HTML element, with the style attribute. In this method, we define the CSS rules directly inside the tag and don’t need to create a class for it.</p>
-        <xmp>  <p style="color: blue; font-size: 22px;">Hello World</p></xmp>
         <p><strong><em>This approach is not an example of clean code and it’s not recommended to use.</em></strong></p>
         <h2>Conclusion</h2>
         <p>CSS is an essential part of Web Development. In this article, I tried to explain the very basic usage and syntax of CSS. If you have any questions, don’t hesitate to ask them below in the comment section.</p>
