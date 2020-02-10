@@ -54,6 +54,8 @@ button a{
     background-color: rgba(156, 250, 215, 0.534);
     border-radius: 25px;
     border: outset 2px;
+    margin-right: auto;
+    margin-left: auto;
 }
 #profilePic img{
     position: relative;
