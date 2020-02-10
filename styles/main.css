@@ -50,26 +50,20 @@ button a{
     padding: 2%;
 }
 #profilePic{
+    position: sticky;
     padding: 2%;
     background-color: rgba(156, 250, 215, 0.534);
-    border-radius: 25px;
+    border-radius: 60px;
     border: outset 2px;
     margin-right: auto;
     margin-left: auto;
-}
-#profilePic img{
-    position: relative;
-    border-radius: 50%;
-    border: outset 2px;
-    width: 25vw;
-    height: 25vw;
+    width: 30vw;
+    height: 30vw;
 }
 .logo{
-    position: sticky;
+    position: relative;
     color: rgb(150, 211, 189);
-}
-.logo td{
-    padding: 0;
+    font-size: 5vw;
 }
 /* CONTENT OF MY SPRINT SECTION */
 .sprint{
@@ -201,5 +195,12 @@ xmp{
 @media screen and (max-width: 736px){ /* Iphone 7 and 8 plus */
     p{
         font-size: 15px;
-    };
+    }
+    .logo{
+        font-size: 10vw;
+    }
+    #profilePic{
+        width: 40vw;
+        height: 40vw;
+    }
 } 
