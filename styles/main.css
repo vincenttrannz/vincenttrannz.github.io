@@ -1,9 +1,10 @@
 html{
     background-color: rgb(150, 211, 189);
     font-family: 'Muli', sans-serif;
-    margin: 10vw;
+    margin: 3vw;
 }
 body{
+    width: 100%;
     padding: 5%;
     box-shadow: 3px 3px gray;
     border: outset;
@@ -23,10 +24,6 @@ ul li{
 .button{
     letter-spacing: 20px;
 }
-button{
-    border-radius: 20px;
-    box-shadow: 1px 1px gray;
-}
 button a{
     text-decoration: none;
     font-size: 16px;
@@ -35,7 +32,75 @@ button a{
     text-align: center;
     font: 90%;
 }
+/* --- MAIN PAGE --- */
+/* Introduction box */
+.intro{
+    background-color: rgba(189, 203, 218, 0.322);
+    border: inset 2px;
+    border-radius: 20px;
+    width: 100%;
+}
+.intro table{
+    text-align: justify;
+    text-align-last: center;
+    width: 100%;
+    padding: 1%;
+}
+.intro table td{
+    padding: 2%;
+}
+#profilePic{
+    padding: 2%;
+    background-color: rgba(156, 250, 215, 0.534);
+    border-radius: 25px;
+    border: outset 2px;
+}
+#profilePic img{
+    position: relative;
+    border-radius: 50%;
+    border: outset 2px;
+    width: 25vw;
+    height: 25vw;
+}
+.logo{
+    position: sticky;
+    color: rgb(150, 211, 189);
+}
+.logo td{
+    padding: 0;
+}
+/* CONTENT OF MY SPRINT SECTION */
+.sprint{
+    display: none;
+}
+.addStyle{
+    border: 0 2px 2px 2px;
+    display: block;
+    padding: 2%;
+    border-radius: 5px;
+}
+.backgroundSprint{
+    background-color: rgba(189, 203, 218, 0.322);
+    border-radius: 10px;
+}
+.mySprintButton{
+    color: whitesmoke;
+    background-color: rgb(150, 211, 189);
+    font-size: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+    border: outset;
+}
+.mySprintButton:hover{
+    color: white;
+    cursor: pointer;
+    background-color: rgb(178, 240, 217);
+}
 
+/* --- BLOG PAGE --- */
 /* NAVIGATION BAR */
 .navi{
     display: block;
@@ -128,3 +193,11 @@ xmp{
     font-size: smaller;
     white-space: pre-line;
 }
+
+
+/* MEDIA CHANNEL */
+@media screen and (max-width: 736px){ /* Iphone 7 and 8 plus */
+    p{
+        font-size: 15px;
+    };
+} 
