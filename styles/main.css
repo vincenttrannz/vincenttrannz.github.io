@@ -1,7 +1,6 @@
 html{
     background-color: rgb(150, 211, 189);
     font-family: 'Muli', sans-serif;
-    margin: 3vw;
 }
 body{
     width: 100%;
@@ -38,7 +37,6 @@ button a{
     background-color: rgba(189, 203, 218, 0.322);
     border: inset 2px;
     border-radius: 20px;
-    width: 100%;
 }
 .intro table{
     text-align: justify;
@@ -47,7 +45,7 @@ button a{
     padding: 1%;
 }
 .intro table td{
-    padding: 2%;
+    padding: 3%;
 }
 #profilePic{
     position: sticky;
@@ -60,24 +58,33 @@ button a{
     width: 30vw;
     height: 30vw;
 }
-.logo{
+.logo a{
     position: relative;
     color: rgb(150, 211, 189);
-    font-size: 5vw;
+    font-size: 6vw;
+}
+.logo a:hover{
+    cursor: pointer;
+    color: rgb(13, 68, 48);
 }
 /* CONTENT OF MY SPRINT SECTION */
-.sprint{
+.sprint1, .sprint2, .sprint3, .sprint4, .sprint5{
     display: none;
 }
 .addStyle{
     border: 0 2px 2px 2px;
     display: block;
     padding: 2%;
-    border-radius: 5px;
+    background-color: rgba(156, 166, 177, 0.404);
+}
+.addStyle button{
+    margin: 1vw 2vw 1vw 2vw;
+    padding: 1vw;
 }
 .backgroundSprint{
     background-color: rgba(189, 203, 218, 0.322);
     border-radius: 10px;
+    text-align: center;
 }
 .mySprintButton{
     color: whitesmoke;
@@ -87,13 +94,29 @@ button a{
     text-transform: uppercase;
     border-radius: 10px;
     outline: none;
-    width: 100%;
+    width: 50%;
     border: outset;
+    padding: 1vw;
+    margin: 1vw;
 }
 .mySprintButton:hover{
     color: white;
     cursor: pointer;
     background-color: rgb(178, 240, 217);
+}
+.sprint1 button, .sprint2 button, .sprint3 button, .sprint4 button, .sprint5 button{
+    color: whitesmoke;
+    background-color: rgb(158, 212, 193);
+    border-radius: 10px;
+    outline: none;
+    border: outset;
+}
+.sprint1 button a, .sprint2 button a, .sprint3 button a, .sprint4 button a, .sprint5 button a{
+    color: whitesmoke;
+    font-size: 20px;
+}
+.sprint1 button:hover, .sprint2 button:hover, .sprint3 button:hover, .sprint4 button:hover, .srpint5 button:hover{
+    background-color: rgb(167, 224, 203);
 }
 
 /* --- BLOG PAGE --- */
@@ -130,7 +153,9 @@ button a{
     position: relative;
 }
 .images img{
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
     opacity: 1;
     display: block;
     padding: 0 !important;
@@ -159,7 +184,7 @@ button a{
     text-align: justify;
     text-align-last: center;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
     padding: 16px;
 }
 /* BLOG PART */
@@ -196,11 +221,14 @@ xmp{
     p{
         font-size: 15px;
     }
-    .logo{
+    .logo a{
         font-size: 10vw;
     }
     #profilePic{
         width: 40vw;
         height: 40vw;
     }
-} 
+    .sprint1 button a, .sprint2 button a, .sprint3 button a, .sprint4 button a, .sprint5 button a{
+        font-size: 15px;
+    }
+};

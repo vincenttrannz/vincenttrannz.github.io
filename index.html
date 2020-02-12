@@ -13,45 +13,69 @@
 </head>
 <body>
     <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <div class="intro">
+    <section class="intro">
         <table>
             <tr>
-                <td colspan="6"><img id="profilePic" src="images/profile1.jpg" alt="An image of myself"></td>
+                <td colspan="3" rowspan="2">
+                    <img id="profilePic" src="images/profile1.jpg" alt="An image of myself">
+                </td>
             </tr>
             <tr>
-                <td colspan="6">
+                <td colspan="3" rowspan="3">
                     <h3>Hi everyone! I'm Vincent</h3>
-                    <p>A bit about myself! I'm not originally from the tech industry, but I always have a special love and passion with technology. After graduated from Victoria University of Wellington back in 2015, I was not lucky enough to secure a job in my study field which is Financial market. Probably back of the time, I was not so sure about what I want to achieve in my career path. 
-                    <p>After a long period of job hunting, I managed to work many positions in Hospitality industry, from a small cafe to a 5 stars hotel. It already has been 7 years and I felt lucky to be a part of it, because Hospitality get me to understand the culture New Zealand and nurturing my soft skills. Being in Hospitality, it is all about patient, hard working and commitment to your responsibility without distracting. I felt thankful for what life has given me so far, all the opportunities, achievements and networking.</p>
-                    <p>I found out DEV Academy through a friend of mine and it was alomst 7 months ago. At the begining, I am really suspicious about EDA because I was scared of being scam and waisting my time again. Though, I have faith in what I want to do and trust in my friend. In 7 months, I research and observe how EDA work and their graduated, everyone said it is life-changing investment'. However, it is extremely difficult and require your high committment in order to achieve that.</p>
+                    <p>I found out DEV Academy through a friend of mine and it was almost 7 months ago. 
+                    At the begining, I am really suspicious about EDA because I was scared of being scam and waisting my time. 
+                    Though, I have faith in what I want to do and trust in my friend. In 7 months, I research and observe how EDA work and their graduated, everyone said it is life-changing investment'. 
+                    However, it is extremely difficult and require your high committment in order to achieve that.</p>
                     <p>Eventually, I am here with everyone in this 2020-piwakawakawa. I am looking to commit my 100% effort with all the task and go beyond it, building the network and some projects.</p>
                     <p>I hope we can share our 16 weeks of EDA together and make it the most valuable treasure in our memory</p>
                     <h4>Ka mihi ki a koutou katoa!</h4>
                 </td>
             </tr>
             <tr class="logo">
-                <td><i class="fab fa-facebook-square"></i></td>
-                <td><i class="fab fa-linkedin"></i></td>
-                <td><i class="fab fa-instagram-square"></i></td>
+                <td><a href="https://www.facebook.com/vincent.trannz" target="_blank"><i class="fab fa-facebook-square"></i></a></td>
+                <td><a href="https://www.linkedin.com/in/vincenttrannz/" target="_blank"><i class="fab fa-linkedin"></i></a></td>
+                <td><a href="https://www.instagram.com/vincent.trannz/" target="_blank"><i class="fab fa-instagram-square"></i></a></td>
             </tr>
             <tr class="logo">
-                <td><i class="fab fa-github-square"></i></td>
-                <td><i class="fas fa-envelope-square"></i></td>
-                <td><i class="fab fa-skype"></i></td>
+                <td><a href="https://github.com/vincenttrannz" target="_blank"><i class="fab fa-github-square"></i></a></td>
+                <td><a href="mailto:tranhieunz@gmail.com?Subject=Hello%20there" target="_top"><i class="fas fa-envelope-square"></i></a></td>
+                <td><a href="https://enspiral-dev-academy.slack.com/team/UM4DLCE8G" target="_blank"><i class="fab fa-slack"></i></a></td>
             </tr>
         </table>
-    </div>
+    </section>
     <div class="mySprint"></div>
         <p>Below is all the links to my answer of each Sprint</p>
-        <div class="backgroundSprint">
-        <button class="mySprintButton" onclick="clickToToggle()">Sprint 1</button>
-            <div class="sprint">
-                <button><a href="blog/sprint1-cultural.html">Go to Indentiy, Values & Strength</a></button>
-                <button><a href="blog/sprint2-cultural.html">Go to Learning Reflection</a></button>
+        <section>
+            <div class="backgroundSprint">
+                <button class="mySprintButton" onclick="clickToToggle1()">Sprint 1</button>
+                    <div class="sprint1">
+                        <button><a href="blog/sprint1-cultural.html">Indentiy, Values & Strength</a></button>
+                        <button><a href="blog/sprint1-technical.html">The Story of Te Houtaewa</a></button>
+                    </div>
+                <button class="mySprintButton" onclick="clickToToggle2()">Sprint 2</button>
+                    <div class="sprint2">    
+                        <button><a href="blog/sprint2-technical.html">Learn more about CSS</a></button>
+                        <button><a href="blog/sprint2-cultural.html">Learning Reflection</a></button>
+                    </div>
+                <button class="mySprintButton" onclick="clickToToggle3()">Sprint 3</button>
+                    <div class="sprint3">    
+                        <button><a href="blog/DOM-applying-classes/index.html">DOM-applying-classes</a></button>
+                        <button><a href="blog/DOM-interactions/index.html">DOM-interactions</a></button>
+                        <button><a href="blog/sprint3-cultural.html">Emotional Intelligence Blog</a></button>
+                        <button><a href="blog/sprint3-technical.html">...</a></button>
+                    </div>
+                <button class="mySprintButton" onclick="clickToToggle4()">Sprint 4</button>
+                    <div class="sprint4">    
+                        <button><a href=".html">...</a></button>
+                        <button><a href=".html">...</a></button>
+                    </div>
+                <button class="mySprintButton" onclick="clickToToggle5()">Sprint 5</button>
+                    <div class="sprint5">    
+                        <button><a href=".html">...</a></button>
+                        <button><a href=".html">...</a></button>
+                    </div>
             </div>
-        </div>
-    <div class="button">
-        <button><a href="blog/sprint2-technical.html">Learn more about what is CSS</a></button>
-    </div>
+        </section>
 </body>
 </html>
