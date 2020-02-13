@@ -2,9 +2,10 @@ html{
     background-color: rgb(150, 211, 189);
     font-family: 'Muli', sans-serif;
     width: 90%;
+    margin-right: auto;
+    margin-left: auto;
 }
 body{
-    width: 100%;
     padding: 5%;
     box-shadow: 3px 3px gray;
     border: outset;
@@ -56,8 +57,8 @@ button a{
     border: outset 2px;
     margin-right: auto;
     margin-left: auto;
-    width: 30vw;
-    height: 30vw;
+    width: 25vw;
+    height: 25vw;
 }
 .logo a{
     position: relative;
@@ -84,7 +85,7 @@ button a{
 }
 .backgroundSprint{
     background-color: rgba(189, 203, 218, 0.322);
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     text-align: center;
 }
 .mySprintButton{
@@ -120,6 +121,15 @@ button a{
     background-color: rgb(167, 224, 203);
 }
 
+/* COPYRIGHT FOOTER */
+.copyright{
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(156, 166, 177, 0.404);
+    color: rgba(64, 99, 86, 0.534);
+    display: inline-block;
+}
 /* --- BLOG PAGE --- */
 /* NAVIGATION BAR */
 .navi{
