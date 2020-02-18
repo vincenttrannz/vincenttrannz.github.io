@@ -25,11 +25,7 @@ hr{
     margin: 2% 0 2% 0;
     width: 100%;
 }
-ul li{
-    text-align: justify;
-    text-align-last: left;
-    line-height: 150%;
-}
+
 .button{
     letter-spacing: 20px;
 }
@@ -39,7 +35,6 @@ button a{
 }
 .title h1{
     text-align: center;
-    font: 90%;
 }
 /* --- MAIN PAGE --- */
 /* Introduction box */
@@ -218,7 +213,7 @@ button a{
     font-size: 20px;
 }
 article img{
-    border-radius: 25px;
+    border-radius: 0px;
     border: 1.5px outset;
     box-shadow: 2px 2px gray;
     width: 80%;
@@ -232,34 +227,68 @@ xmp{
     border-radius: 10px;
     font-size: smaller;
     white-space: pre-line;
+    padding: 8px;
+    line-height: 1.5;
+    background-image: url("images/css.jpeg");
 }
-
+#DOM ol li{
+    line-height: 1.50;
+}
 
 /* MEDIA CHANNEL */
 @media screen and (max-width: 736px){ /* Iphone 7 and 8 plus */
-    p{
-        font-size: 15px;
+    /* PHONE HEADER SECTION */
+    #clock{
+        width: 70vw; 
+        height: 40vw;
+        padding-left: 4%;
     }
-    li{
-        font-size: 15px;
-    }
-    .logo a{
-        font-size: 10vw;
+    header{
+        text-align: center;
+        font-size: 1rem;
     }
     #profilePic{
         text-align: center;
         width: 30vw;
         height: 30vw;
     }
+    .logo a{
+        font-size: 10vw;
+    }
+    /* MAIN PAGE BUTTON */
     .sprint1 button a, .sprint2 button a, .sprint3 button a, .sprint4 button a, .sprint5 button a{
         font-size: 15px;
     }
-    header{
-        text-align: center;
+    /* PHONE BODY SECTION */
+    body{
+        text-align: justify;
+        text-align-last: center ;
     }
-    #clock{
-        width: 70vw; 
-        height: 40vw;
-        padding-left: 4%;
+    .blog{
+        text-align: justify;
+        text-align-last: left;
     }
+    p{
+        font-size: 1rem;
+    }
+    li{
+        font-size: 1rem;
+    }
+    /* PHONE BLOG STYLE */
+    .blog h2{
+        font-size: 1.5rem;
+    }
+    .blog ol, .blog ul{
+        font-size: 1.15rem;
+    }
+    .blog ol li, .blog ul li{
+        font-size: 1rem;
+    }
+    #accessingData ul li{
+        font-size: 1rem;
+    }
+    xmp{
+        font-size: 0.8rem;
+    }
+
 };

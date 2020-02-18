@@ -8,15 +8,17 @@
     <title>The dev blog</title>
 </head>
 <body>
-    <div class="blankspace"></div>
-    <div class="navi">
-        <a href="../index.html">Home</a>
-        <a href=".html">Contact</a>
-    </div>
-    <hr>
-    <div class="title">
-        <h1>CSS for beginngers: What is CSS and How to use it in Web Development?</h1>
-    </div>
+    <header>
+        <div class="blankspace"></div>
+        <div class="navi">
+            <a href="../index.html">Home</a>
+            <a href=".html">Contact</a>
+        </div>
+        <hr>
+        <div class="title">
+            <h1>CSS for beginngers: What is CSS and How to use it in Web Development?</h1>
+        </div>
+    </header>
     <hr>
     <div class="source">
         <h5>Source:&nbsp;<a href="https://medium.com/swlh/css-for-beginners-what-is-css-and-how-to-use-it-in-web-development-5985afe53096">CSS for beginngers</a></h5>
@@ -26,67 +28,65 @@
         <div class="middlePic">
             <div class="text">
                 <h3>The important of CSS in Web Development</h3>
-                <p><em>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript</em></p>
+                <p><em>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a HTML.</em></p>
             </div>
         </div>
     </div>
-    <div class="blog">
-        <div class="intro">
-            <p><strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong> are 3 main languages of <strong>Web Front-end Development</strong>. In this article, I will cover the basics of CSS. So if you have no idea about CSS, or don’t know how to use it, this article is for you :)
+    <article class="blog">
+        <section>
+            <div>
+                <p><strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong> are 3 main languages of <strong>Web Front-end Development</strong>. In this article, I will cover the basics of CSS. So if you have no idea about CSS, or don’t know how to use it, this article is for you :)
+                    <p>
+                    We will have a look at what CSS is, how to write CSS rules and how to add them to HTML. As a pre-requisite, if you don’t know anything about Web Development, I recommend you to understand HTML first.</p>
+                    </p>
+            </div>
+        </div>
+        </section>
+        <section>
+            <h2>What is CSS?</h2>
+                <p><strong>CSS (Cascading Style Sheets)</strong> is a language for <b>styling the webpage</b>. We can change the appearance and the layout of the webpage by using CSS. We can also define how a website’s view changes in different screens like desktops, tablets, and mobile devices.</p>
+                <p>CSS is not a programming language, like C++ or JavaScript. However, CSS is not as easy as it seems. If you try to use it without understanding, you will have difficulties in web development. Therefore, learning CSS is as important as learning a programming language.</p>
+                <p>Let’s continue with an example to reveal the effect of CSS on a website. Below is an example of how Stuff.co.nz looks like without CSS or JavaScript.</p>
+            <div class="break-part"></div>
+                <img src="../images/ezgif.com-video-to-gif.gif" alt="Image showing stuff website without CSS and JS">
+            <div class="break-part"></div>
                 <p>
-                We will have a look at what CSS is, how to write CSS rules and how to add them to HTML. As a pre-requisite, if you don’t know anything about Web Development, I recommend you to understand HTML first.</p>
-                </p>
-        </div>
-        <div class="break-part-dotted">
-            <p>. . .</p>
-        </div>
-    </div>
-    <article>
-        <h2>What is CSS?</h2>
-            <p><strong>CSS (Cascading Style Sheets)</strong> is a language for <b>styling the webpage</b>. We can change the appearance and the layout of the webpage by using CSS. We can also define how a website’s view changes in different screens like desktops, tablets, and mobile devices.</p>
-            <p>CSS is not a programming language, like C++ or JavaScript. However, CSS is not as easy as it seems. If you try to use it without understanding, you will have difficulties in web development. Therefore, learning CSS is as important as learning a programming language.</p>
-            <p>Let’s continue with an example to reveal the effect of CSS on a website. Below is an example of how Stuff.co.nz looks like without CSS or JavaScript.</p>
-        <div class="break-part"></div>
-            <img src="../images/ezgif.com-video-to-gif.gif" alt="Image showing stuff website without CSS and JS">
-        <div class="break-part"></div>
-            <p>
-        <h3>1. External CSS File:</h3>
-        <p>Keeping CSS code in a separate file is best practice. In real programming world, we need to keep HTML, CSS and JavaScript code in separate files and later import them where necessary.</p>
-        <p>We can create a separate CSS file with an extension of .css and include it to HTML. For example, we can create a CSS file like this one: index.css</p>
-        Inside <code> index.css</code>, we can write our CSS code:
-<xmp>   p{
-    color: red;
-    }
-</xmp>
-        <p>Then we can import index.css to HTML with a link tag like below:</p>
-<xmp>
- <head>
-    <link rel="stylesheet" href="index.css">
- </head>
-     <body>
-         <p>Hello World</p>
-     </body>
-</xmp>
-        <p>So now the HTML file has the CSS code and the changes will apply to the elements.</p>
-        <h3>2. Internal CSS with style tag:</h3>
-        <p>Another way where you can write CSS code is inside a style tag in HTML. 
-        This will keep the CSS code directly inside the HTML file, rather than in a separate file.</p>
-<xmp>
- <style>
-     p{
-     color: red;
-     };
- </style>
- <body>
-     <p>Hello World</p>
- </body>
-</xmp>
-        <h3>3. Inline style:</h3>
-        <p>The third way is to write CSS rules directly inside an HTML element, with the style attribute. In this method, we define the CSS rules directly inside the tag and don’t need to create a class for it.</p>
-        <p><strong><em>This approach is not an example of clean code and it’s not recommended to use.</em></strong></p>
-        <h2>Conclusion</h2>
-        <p>CSS is an essential part of Web Development. In this article, I tried to explain the very basic usage and syntax of CSS. If you have any questions, don’t hesitate to ask them below in the comment section.</p>
-        <p>There are many other rules and features to explore in the world of CSS. I will be covering them in my following articles.</p>
+                <h3>1. External CSS File:</h3>
+                    <p>Keeping CSS code in a separate file is best practice. In real programming world, we need to keep HTML, CSS and JavaScript code in separate files and later import them where necessary.</p>
+                    <p>We can create a separate CSS file with an extension of .css and include it to HTML. For example, we can create a CSS file like this one: index.css</p>
+                    Inside <code> index.css</code>, we can write our CSS code:
+                    <xmp>   p{
+                        color: red;
+                        }
+                    </xmp>
+                            <p>Then we can import index.css to HTML with a link tag like below:</p>
+                    <xmp><head>
+                        <link rel="stylesheet" href="index.css">
+                    </head>
+                        <body>
+                            <p>Hello World</p>
+                        </body>
+                    </xmp>
+                    <p>So now the HTML file has the CSS code and the changes will apply to the elements.</p>
+                <h3>2. Internal CSS with style tag:</h3>
+                    <p>Another way where you can write CSS code is inside a style tag in HTML. 
+                    This will keep the CSS code directly inside the HTML file, rather than in a separate file.</p>
+                    <xmp><style>
+                        p{
+                        color: red;
+                        };
+                    </style>
+                    <body>
+                        <p>Hello World</p>
+                    </body>
+                    </xmp>
+                <h3>3. Inline style:</h3>
+                    <p>The third way is to write CSS rules directly inside an HTML element, with the style attribute. In this method, we define the CSS rules directly inside the tag and don’t need to create a class for it.</p>
+                    <p><strong><em>This approach is not an example of clean code and it’s not recommended to use.</em></strong></p>
+            <h2>Conclusion</h2>
+                <p>CSS is an essential part of Web Development. In this article, I tried to explain the very basic usage and syntax of CSS. If you have any questions, don’t hesitate to ask them below in the comment section.</p>
+                <p>There are many other rules and features to explore in the world of CSS. I will be covering them in my following articles.</p>
+        </section>
     </article>
 </body>
 </html>

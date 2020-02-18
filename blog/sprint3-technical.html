@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-    <article>
+    <article class="blog">
     <section class="introduction">
         <div>
         <!--  PUT YOUR INTRO HERE -->
@@ -43,24 +43,138 @@
         </div>
     </section>
         <section>
-            <h2>1. The difference between HTML and CSS</h2>
-                <p>
+            <section id="HTMLandCSS">
+                <h2>I. The difference between HTML and CSS</h2>
+                        <ul>
+                            <li><strong>HTML:</strong>&nbsp;It means Hypertext Markup Language, and it is the standard markup language for documents designed to be displayed in a web browser.</li>
+                            <li><strong>CSS:</strong>&nbsp;Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML.</li>
+                        </ul>
+                        <p>
+                            It easy to understand by taking it as like how you drawing a picture. First of all, you need to know what you want to draw.
+                            Then start planning how you want it to be visible on the piece of blank paper. Then, you start sketching it, create a circle and 
+                            a square here and there, use your ruler to sketch a box. This is exactly what is happening within <b><i>HTML</i></b>. With <b><i>HTML</i></b>, web developer start creating
+                            the structure of their web page, how they want it to be visible to other people. 
+                        </p>
+                        <p>
+                            After all the sketching and drawing, you can almost see how it is finally look like. However, it is just purely pencil on a piece of paper for now. And of course, you are going
+                            to colour it, re-edit many more times until you actually feel happy with that. Again, it is the same with <b><i>CSS</i></b>. <b><i>CSS</i></b> is the step when a web developer
+                            applies their style on their purely black and white web page. 
+                        </p>
+            </section>
+            <section id="controlFlow">
+                <h2>II. Control Flow and Loops</h2>
+                    <p>
+                        The control flow is the order in which the computer executes statements in a script.
+                        Code is run in order from the first line in the file to the last line, unless the computer runs across the 
+                        (extremely frequent) structures that change the control flow, such as conditionals and loops. 
+                    </p>
+                    <p>
+                        To put 'control flow' in a simple term, you can imagine of you are waking up everyday to go to work. One simple task.
+                    </p>
+                    <xmp> if(time == 7) {
+                            wakeUp == true;
+                            } else {
+                                wakeUp == false;
+                            }
+                    </xmp>
+                    <p>
+                        You can think of "Looping" in JavaScript(while) is like your simple daily life. To be put in a statement, you want to put in this way.
+                        While you still awake, you will firstly take brush your teeth, go to work, get lunch, go home, eat dinner, watch movies and then go to sleep.
+                        That's probably how a normal person would finish their day to day life.
+                        In JavaScript, we can put this process by coding this way.
+                        <xmp>var awake = []; // dailyLife is gonna be a combination of your day to day life
+                            var i = ["brush teeth", "have breakfast", "go to work", "eat lunch", "go home", "eat dinner", "go to sleep"]; //tasks that you need to do everyday
+                                do{
+                                    awake.push(i) // This will push all the tasks you need to do everyday
+                                }
+                                while(awake.length <= 1) // This is state your day 1
+                            => The awake[] now will equal the the array of var i.
+                        </xmp>
+                    </p>
+            </section>
+            <section id="DOM">
+                <h2>III. DOM (Document Object Model)</h2>
+                    <div class="source">
+                        <p>Find out more about <a href="https://www.geeksforgeeks.org/dom-document-object-model/">Document Object Model</a></p>
+                    </div>
+                    <p>
+                        The Document Object Model (DOM) is a programming interface for HTML(Hypertext Markup Language) and XML(Extensible markup language) documents. 
+                        It defines the logical structure of documents and the way a document is accessed and manipulated.
+                    </p>
+                    <p>
+                        DOM is a way to represent the webpage in the structured hierarchical way so that it will become easier for programmers and users to glide through the document. 
+                        With DOM, we can easily access and manipulate tags, IDs, classes, Attributes or Elements using commands or methods provided by Document object.
+                    </p>
+                    <img src="../images/DOM.png" alt="A Picture of DOM Tree structure" style="width: 40%; height: 40%; background-color: rgb(224, 255, 243);">
+                    <p><strong><u>Methods of Document Object</u></strong></p>
+                        <ol>
+                            <li><b>write(“string”):</b> writes the given string on the document.</li>
+                            <li><b>getElementById():</b> returns the element having the given id value.</li>
+                            <li><b>getElementsByName():</b> returns all the elements having the given name value.</li>
+                            <li><b>getElementsByTagName():</b> returns all the elements having the given tag name.</li>
+                            <li><b>getElementsByClassName():</b> returns all the elements having the given class name.</li>
+                        </ol>
+            </section>
+            <section id="accessingData">
+                <h2>IV. Accessing Data from Arrays [ ] and Object { }</h2>
+                <ol>
+                    <h3><li>Acessing data from an array [ ]</li></h3>
+                    <p>
+                        Firstly, we need to aware that a first item in an array is declare as their position 0 (zero), not 1 (one).
+                        We all start counting every object as 1, however noted that computer start counting their data nested in an array as 0.
+                        By understanding that, to access the data in array. We are going to:
+                        <xmp>var array = [50,60,70];
+                            console.log(array[0]); // equals 50
+                            console.log(array[1]); // equals 60
+                            var data = array[1];  // equals 60
+                        </xmp>
+                    </p>
+                    <h3><li>Accessing data from an Object { }</li></h3>
+                    <p>There are mainly two ways to access object properties which is by dot notation "." and bracket notation [ ]</p>
                     <ul>
-                        <li><strong>HTML:</strong>&nbsp;It means Hypertext Markup Language, and it is the standard markup language for documents designed to be displayed in a web browser.</li>
-                        <li><strong>CSS:</strong>&nbsp;Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML.</li>
+                        <li>Dot notation is what you use when you know the name of the property you're trying to access ahead of time.</li>
+                        <xmp>var myObj = {
+                            prop1: "val1",
+                            prop2: "val2"
+                          };
+                          var prop1val = myObj.prop1;
+                          console.log(prop1val) => val1 // value of myObj property 1
+                          var prop2val = myObj.prop2; 
+                          console.log(prop2val) => val2 // value of myObj property 2
+                        </xmp>
+                        <li>If the property of the object you are trying to access has a space in its name, you will need to use bracket notation.
+                            However, you can still use bracket notation on object properties without spaces.</li>
+                        <xmp>var myObj = {
+                            "Space Name": "Kirk",
+                            "More Space": "Spock",
+                            "NoSpace": "USS Enterprise"
+                          };
+                          myObj["Space Name"]; // Kirk
+                          myObj['More Space']; // Spock
+                          myObj["NoSpace"];    // USS Enterprise
+                        </xmp>
                     </ul>
-                    <p>
-                        It easy to understand by taking it as like how you drawing a picture. First of all, you need to know what you want to draw.
-                        Then start planning how you want it to be visible on the piece of blank paper. Then, you start sketching it, create a circle and 
-                        a square here and there, use your ruler to sketch a box. This is exactly what is happening within <b><i>HTML</i></b>. With <b><i>HTML</i></b>, web developer start creating
-                        the structure of their web page, how they want it to be visible to other people. 
-                    </p>
-                    <p>
-                        After all the sketching and drawing, you can almost see how it is finally look like. However, it is just purely pencil on a piece of paper for now. And of course, you are going
-                        to colour it, re-edit many more times until you actually feel happy with that. Again, it is the same with <b><i>CSS</i></b>. <b><i>CSS</i></b> is the step when a web developer
-                        applies their style on their purely black and white web page. 
-                    </p>
-                </p>
+                </ol>
+            </section>
+            <section id="function">
+                <h2>V. What is function and why using it?</h2>
+                <div class="source">
+                    <p>Find out more about <a href="https://www.geeksforgeeks.org/functions-in-javascript/">Function in JavaScript</a></p>
+                </div>
+                <p>A function is a set of statements that take inputs, do some specific computation and produces output. 
+                    Basically, a function is a set of statements that performs some tasks or does some computation and then returns the result to the user.</p>
+                <p>The idea is to put some commonly or repeatedly done task together and make a function so that instead of writing the same code again 
+                    and again for different inputs, we can call that function.</p>
+                <p>Like other programming languages, JavaScript also supports the use of functions. 
+                    You must already have seen some commonly used functions in JavaScript like alert(), this is a built-in function in JavaScript. 
+                    But JavaScript allows us to create user-defined functions also. Below is an example of how we should write a function in JS.</p>
+                <xmp>function functionName() { 
+                    console.log("Hello World"); // This function is only to call the "Hello World" on web browser console tab.
+                    }
+                    functionName() // You can now call this function whenever you need in your code to execute that function. 
+                    Remember to have a bracket, as this is how you execute that function.
+                </xmp>
+            </section>
         </section>
     </article>
 </body>
