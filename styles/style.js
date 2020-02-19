@@ -19,4 +19,7 @@ function clickToToggle5() {
    var toggle5 = document.querySelector(".sprint5");
    toggle5.classList.toggle("addStyle");
 };
-
+function clickToToggleNavi(){
+   var toggleNavi = document.querySelector(".hidden");
+   toggleNavi.classList.toggle("sprintLink")
+}
