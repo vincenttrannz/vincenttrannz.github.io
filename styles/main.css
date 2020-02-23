@@ -1,7 +1,7 @@
 html{
     background-color: rgb(150, 211, 189);
     font-family: 'Muli', sans-serif;
-    margin-top: 5%;
+    margin-top: 7%;
     width: 90%;
     margin-right: auto;
     margin-left: auto;
@@ -12,7 +12,7 @@ body{
     box-shadow: 3px 3px gray;
     border: outset;
     border-radius: 25px;
-    background-color: whitesmoke;
+    background-color: rgb(240, 240, 240);
     font-size: 20px;
 }
 #clock{
@@ -143,11 +143,12 @@ button a{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0.75%;
+    padding: 1%;
     border-bottom: 4px solid slategray;
     text-align: center;
     overflow: hidden;
     background-color: gainsboro;
+    background-image: linear-gradient(rgb(155, 155, 155), whitesmoke);
 }
 .navi .sprintLink{
     background-color: gainsboro;
@@ -182,15 +183,19 @@ button a{
 }
 .navi button:nth-of-type(1){
     background-color: rgb(171, 210, 236);
+    background-image: linear-gradient(rgb(171, 210, 236), whitesmoke);
 }
 .navi button:nth-of-type(2){
     background-color: rgb(134, 241, 182);
+    background-image: linear-gradient(rgb(134, 241, 182), whitesmoke);
 }
 .navi button:nth-of-type(3){
     background-color: rgb(235, 235, 106);
+    background-image: linear-gradient(rgb(235,235,106), whitesmoke);
 }
 .navi button:nth-of-type(4){
     background-color: rgb(199, 108, 108);
+    background-image: linear-gradient(rgb(199,108,108), whitesmoke);
 }
 .navi a{
     color: rgb(50, 50, 50);
@@ -205,6 +210,16 @@ button a{
 }
 .navi button:focus{
     outline: none;
+}
+
+#discuss table{
+   border-collapse: collapse;
+   border-style: solid;
+   background-color: rgb(255, 248, 206);
+}
+#discuss table tr td{
+    padding: 1vw;
+    border: 3px solid gray;
 }
 /* SOURCE SPACE */
 .source{
@@ -266,6 +281,10 @@ article img{
     margin-left: auto;
     margin-right: auto;
 }
+.blog{
+    text-align: justify;
+    text-align-last: left;
+}
 xmp{
     display: block;
     background-color: lightgray;
@@ -320,6 +339,9 @@ xmp{
         font-size: 1rem;
     }
     /* PHONE BLOG STYLE */
+    .html{
+        margin-top: 10%;
+    }
     .blog h2{
         font-size: 1.5rem;
     }
