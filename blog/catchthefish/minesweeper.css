@@ -1,0 +1,239 @@
+html{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(./images/ocean.jpg);
+  background-size: cover;
+}
+
+body {
+  display: block;
+  align-items: center;
+  flex-direction: column;
+}
+
+#message, #notes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#message {
+  font-size: 2rem;
+  font-weight: 700;
+  background: center/50% url(./images/sea.jpg);
+  color: coral;
+  text-shadow: #476080 4px 4px;
+  border: outset 2px #c2daf7;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  box-shadow: coral 3px 3px;
+}
+
+/* Instruction */
+
+.instruction{
+  color: goldenrod;
+  font-size: 20px;
+  text-align: justify;
+  text-align-last: left;
+}
+
+/* BUTTON STYLE */
+
+.buttonStyle{
+  margin: 20px;
+  padding: 10px;
+  background: center/100% url(./images/seashell.jpg);
+  border: inset 2px #c7e1ff;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
+}
+
+.buttonStyle #resetButton{
+  color: coral;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  outline: none;
+  padding: 12px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.buttonStyle #resetButton:hover{
+  background-color: coral;
+  color: white;
+}
+
+.board {
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: outset 4px #c7e1ff;
+  background: center/120% url(./images/deepsea.jpeg);
+  border-radius: 10px;
+}
+
+.modeSelect{
+  width: 85%;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: inset 2px #c7e1ff;
+  border-radius: 15px;
+  box-shadow: inset #c7e1ff;
+  background-color: ghostwhite;
+}
+
+.modeSelect h3{
+  margin-left: auto;
+  margin-right: auto;
+  color: coral;
+  font-size: 36px;
+  background-color: #c7e1ff;
+  width: 60%;
+  border-radius: 15px;
+  text-shadow: #476080 2px 2px;
+  box-shadow: coral 2px 2px;
+}
+
+.modeSelect button{
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  outline: none;
+  padding: 12px;
+  border-radius: 15px;
+  background-color: #c7e1ff;
+  color: goldenrod;
+  margin: 20px;
+}
+
+#easyMode:hover{
+  color: transparent;
+  border: none;
+  height: 65px;
+  background: center/100% url(./images/easy.png);
+}
+#mediumMode:hover{
+  color: transparent;
+  border: none;
+  width: 120px;
+  height: 60px;
+  background: center/100% url(./images/medium.png);
+}
+#hardMode:hover{
+  color: transparent;
+  border: none;
+  width: 212px;
+  height: 70px;
+  background: center/100% url(./images/hard.png);
+}
+
+#easyMode:focus{
+  color: transparent;
+  border: none;
+  height: 65px;
+  background: center/100% url(./images/easy.png);
+}
+
+#mediumMode:focus{
+  color: transparent;
+  border: none;
+  width: 120px;
+  height: 60px;
+  background: center/100% url(./images/medium.png);
+}
+
+#hardMode:focus{
+  color: transparent;
+  border: none;
+  width: 212px;
+  height: 70px;
+  background: center/100% url(./images/hard.png);
+}
+/* Radio size select */
+
+.radio {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 10px;
+  line-height: 2rem;
+  font-size: 20px;
+  border: outset 2px coral;
+  background-color: rgb(255, 183, 183);
+  border-radius: 15px;
+}
+
+.radio input[type="radio"]{
+  position: fixed;
+  opacity: 0;
+  width: 0;
+}
+
+.radio label{
+  display: inline-block;
+  margin: 5px;
+  background-color: #c7e1ff;
+  color: goldenrod;
+  padding: 10px 20px;
+  font-family: sans-serif, Arial;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: outset 2px 2px #c7e1ff;
+  box-shadow: 2px 2px gray;
+  border-radius: 15px;
+}
+
+.radio label:hover {
+  background-color: coral;
+  color: white;
+}
+
+.board div {
+  color: #476080;
+  font-size: 2rem;
+  max-width: 200px;
+  width: 75px;
+  height: 75px;
+  border: outset 0.5px #c7e1ff;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  margin: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board div:hover {
+  background-color: #c4e0ff;
+  cursor: crosshair;
+}
+
+div.mine, div.mine:hover {
+  background: no-repeat center/125% url("images/evil.jpeg");
+}
+
+div.hidden {
+  /* background: #eee; */
+  background: center/ 110% url(./images/hiclipart.com.png) #c2daf7;
+  border: none;
+}
+
+div.hidden:hover {
+  background: center/110% url(./images/hiclipart.com.png) rgb(138, 159, 187); 
+  border: none;
+}
+
+div.marked, div.marked:hover {
+  background: no-repeat center/100% url("images/fisher.png") whitesmoke;
+}

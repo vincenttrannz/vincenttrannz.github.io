@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="minesweeper.css">
+    <script src="lib/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="lib/tests.js"></script>
+    <script src="lib/lib.js"></script>
+    <script src="minesweeper.js"></script>
+  </head>
+  <body>
+    <div id="message"></div>
+    <div id="notes"></div>
+    <div class="board"></div>
+    <div class="buttonStyle">
+      <button id="resetButton" type="button" onclick="resetButton()">Reset Game</button>
+        <div class="modeSelect">
+            <h3>Game Modes</h3>
+            <div class="instruction">
+              <p>
+                The evil fish is everywhere, help the ocean to catch them all.
+                They are hinding behind some of these bubbles, your mission is to
+                discover where they are and catch them all.
+                Good Luck!
+              </p>
+              <p>
+                Game instruction:
+                <ol>
+                  <li>
+                    Choose the size of the board
+                  </li>
+                  <li>
+                    Choose the difficulty level
+                  </li>
+                  <li>
+                    Left-mouse click for popping the bubble to expose it.
+                  </li>
+                  <li>
+                    Right-mouse click for catching your suspected bubble.
+                  </li>
+                </ol>
+              </p>
+            </div>
+          <button name="difficulty" id="easyMode" type="button">Easy</button>
+          <button name="difficulty" id="mediumMode" type="button">Medium</button>
+          <button name="difficulty" id="hardMode" type="button">Hard</button>
+          <div class="radio">
+            <label for="small">Small</label>
+            <input id="small" type="radio" value="3" name="boardSize" checked="checked">
+            <br>
+            <label for="medium">Medium</label>
+            <input id="medium" type="radio" value="4" name="boardSize" checked="checked">
+            <br>
+            <label for="large">Large</label>
+            <input id="large" type="radio" value="5" name="boardSize" checked="checked">
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
