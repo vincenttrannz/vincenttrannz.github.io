@@ -17,6 +17,17 @@ class Calculator {
         this.currentLabel = '0';
         this.previousLabel = '';
         this.method = undefined
+        allclearButtons.style.backgroundColor = 'gainsboro'
+        allclearButtons.innerText = 'AC'
+    }
+    
+    halfClear(){
+        if(this.previousInputLabelTextElement.innerText != ''){
+            this.previousLabel = this.currentInputLabelTextElement.innerText;
+            this.currentLabel = this.previousLabel + undefined;
+        }
+        allclearButtons.style.backgroundColor = "orange";
+        allclearButtons.innerText = 'C';
     }
 
     appendNumber(number) {
@@ -67,20 +78,23 @@ class Calculator {
     }
 
     getDisplayNumber(number) {
-        const stringNumber = number.toString()
-        const integerDigits = parseFloat(stringNumber.split('.')[0])
-        const decimalDigits = stringNumber.split('.')[1] 
-        let integerDisplay
-        if (isNaN(integerDigits)){
-            integerDisplay = ''
-        } else {
-            integerDisplay = integerDigits.toLocaleString('en', {maximumFractionDigits: 0})
-        }
-        if (decimalDigits != null){
-            return `${integerDisplay}.${decimalDigits}`
-        } else {
-            return integerDisplay
-        }
+        const floatNumber = parseFloat(number)
+        if(isNaN(floatNumber)) return ''
+        return floatNumber.toString()
+        // const stringNumber = number.toString()
+        // const integerDigits = parseFloat(stringNumber.split('.')[0])
+        // const decimalDigits = stringNumber.split('.')[1] 
+        // let integerDisplay
+        // if (isNaN(integerDigits)){
+        //     integerDisplay = ''
+        // } else {
+        //     integerDisplay = integerDigits.toLocaleString('en', {maximumFractionDigits: 0})
+        // }
+        // if (decimalDigits != null){
+        //     return `${integerDisplay}.${decimalDigits}`
+        // } else {
+        //     return integerDisplay
+        // }
     }
 
     updateDisplay() {
@@ -102,22 +116,6 @@ class Calculator {
         } else {
             this.previousInputLabelTextElement.innerText = ' '
         }
-    }
-
-    halfClear(){
-        debugger;
-        if(this.previousInputLabelTextElement.innerText != ''){
-            this.previousLabel = this.currentInputLabelTextElement.innerText;
-        }
-        this.previousInputLabelTextElement.innerText = 'Calculator is now cleared'
-        this.clear()
-        // } 
-        // if(this.previousLabel = this.currentInputLabelTextElement.innerText){
-        // this.currentLabel = this.previousLabel + this.method;
-        // }
-        // if(this.currentLabel != undefined){
-        //     this.currentLabel = this.currentInputLabelTextElement.innerText + this.method;
-        // }
     }
 }
 
