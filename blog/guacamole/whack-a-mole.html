@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1">
+	  <title>Gua-Ca-Mole!</title>
+	  <link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="whack-a-mole.css">
+	  <link rel="stylesheet" href="./main.css">
+	</head>
+	<body>
+	<h1>Gua-Ca-Mole!</h1>
+		<div class="gameBoard">
+			<div class="timer">
+			<h2>Timer</h2>
+				<button id="45s" type="button">45 seconds</button>
+				<button id="60s" type="button">60 seconds</button>
+				<button id="90s" type="button">90 seconds</button>
+				<span><p id="chooseModeNow"></p></span>
+			</div>
+			<div class="gameMode">
+			<h2>Game mode</h2>
+				<button id="easyMode" type="button">Easy</button>
+				<button id="mediumMode" type="button">Normal</button>
+				<button id="hardMode" type="button">Hard</button>
+				<button id="insaneMode" type="button">Insane</button>
+			</div>
+			<div class="gameStatus">
+				<h2 id="score">Let's get em</h2>
+				<h2 id="time"></h2>
+			</div>
+			<div class="resetBoard">
+				<button id="reset" onclick="resetButton()" type="button">Reset</button>
+			</div>
+		</div>
+		<table onclick="whack(event)">
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<script src="whack-a-mole.js"></script>
+	</body>
+</html>

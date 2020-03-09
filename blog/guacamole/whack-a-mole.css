@@ -1,0 +1,112 @@
+*{
+    font-family: sans-serif;
+}
+
+html{
+    background: center/100% url(./images/avo_background.jpg);
+}
+
+body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: outset 2px gray;
+    border-radius: 25px;
+    background: radial-gradient(rgb(192, 89, 51), rgb(185, 255, 127));
+}
+
+button{
+    padding: 15px;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: 16px;
+    border: 2px outset gainsboro;
+    background-color: gainsboro;
+}
+
+button:hover{
+    cursor: pointer;
+    border: 2px inset gainsboro;
+    background-color: rgb(209, 255, 209);
+}
+
+button:focus{
+    outline: none;
+    border: 2px inset gainsboro;
+    background-color: rgb(209, 255, 209);
+}
+
+.gameBoard{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(178, 219, 139);
+    background-image: url(./images/avocado.png);
+    background-size: 50%;
+    background-position: left;
+    width: 60%;
+    padding: 15px;
+    text-align: center;
+    border: outset 2px gray;
+    border-radius: 25px;
+}
+
+.timer{
+    margin-left: auto;
+    margin-right: auto;
+    border: inset 2px gray;
+    border-radius: 15px 15px 0 0;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    width: 100%;
+    background-color: whitesmoke;
+    opacity: 90%;
+}
+
+.gameMode{
+    margin: 10px auto 0 auto;
+    border: inset 2px gray;
+    padding-bottom: 15px;
+    width: 100%;
+    background-color: whitesmoke;
+    opacity: 90%;
+}
+
+.gameStatus{
+    margin: 10px auto 10px auto;
+    border: inset 2px gray;
+    border-radius: 0 0 15px 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    background-color: whitesmoke;
+    opacity: 90%;
+}
+
+table{
+    padding: 50px;
+    border-style: hidden;
+}
+
+table tr td{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(190, 223, 190);
+    border: outset 2px gray;
+}
+
+table tr td:hover{
+    cursor: grab;
+}
+
+table tr td:active{
+    cursor: grabbing;
+}
+
+@media screen and (max-width: 736px){
+    body{
+        width: 100%;
+    }
+    table tr td{
+        width: 20vw;
+        height: 10vw;
+    }
+}
