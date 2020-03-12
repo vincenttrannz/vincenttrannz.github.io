@@ -1,0 +1,55 @@
+html{
+    background: linear-gradient(rgb(172, 126, 59), white);
+    height: 100%;
+}
+
+
+.keyBoard{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.Key{
+    justify-content: center;
+    text-align: center;
+}
+
+.white{
+    background-color: whitesmoke;
+    border-collapse: collapse;
+    border: outset 1px gray;
+    border-radius: 0 0 5px 5px;
+    line-height: 50rem;
+    width: 100px;
+    height: 450px;
+}
+
+.white:first-of-type{
+    border-radius: 10px 0 5px 5px;
+}
+
+.white:last-of-type{
+    border-radius: 0 10px 5px 5px;
+}
+
+.black{
+    color: white;
+    margin-left: -35px;
+    margin-right: -35px;
+    border: 1px outset gray;
+    border-radius: 0 0 10px 10px;
+    line-height: 30rem;
+    background-color: black;
+    width: 70px;
+    height: 300px;
+    z-index: 2;
+}
+.press{
+    font-size: 2.5rem;
+    font-style: oblique;
+    background: linear-gradient(whitesmoke, rgb(148,177,116));
+    border: inset 1px gray;
+}
